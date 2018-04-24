@@ -1,0 +1,15 @@
+.button {
+    display: inline-block;
+    line-height: 2.5;
+    padding: 0 1.5em;
+    border: 1px;
+    border-radius: 1em/5em;
+    &.primary {
+        background: #4FC3F7;
+        color: #ffff;
+        &:hover {
+            background: white;
+            color: #4FC3F7;
+        }
+    }
+}

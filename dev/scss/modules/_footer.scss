@@ -1,0 +1,25 @@
+.main-footer{
+    color: white;
+    background: url("../img/banner.jpg")no-repeat center ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 25em;
+    width: 100%;
+
+    &__title{
+      display: inline-block;
+    }
+  }
+
+  .fab{
+    font-size: 4em;
+    display: inline-block;
+    margin: 0 .3em;
+    color: getcolor(amarillo);
+    opacity: .5;
+    &:hover {
+        opacity: 1;
+    }
+  }

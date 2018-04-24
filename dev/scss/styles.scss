@@ -1,0 +1,16 @@
+
+//Config
+@import 'config';
+
+//Estilos Base
+@import 'base/_normalize';
+@import 'base/_base';
+
+
+@import 'modules/_banner';
+@import 'modules/_contact';
+@import 'modules/modules';
+@import 'modules/servicios';
+@import 'modules/testimonial';
+@import 'modules/footer';
+@import 'modules/buttons';

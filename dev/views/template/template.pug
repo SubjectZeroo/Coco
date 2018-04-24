@@ -1,0 +1,29 @@
+block config
+    include ../config/config
+
+<!DOCTYPE html>
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        meta(name="description" content=description)
+        title #{pageTitle} | #{siteTitle}
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+        link(rel="stylesheet", href="css/styles.css")
+    body
+        header.main-header
+            .banner
+                .container-banner
+                    img.logo(src="img/CO.png", alt="")
+                    h1.container-banner__title  ya puedes retirar tu dinero de paypal 
+                    h2.container-banner__subtitle ¡Recíbelo en Bolívares Rápido y con la mejor cotización del mercado! 
+        block main
+        footer.main-footer
+                .container-footer
+                    h1.title  Sin efectivo cuenta con tu dinero siempre
+                    i.fab.fa-facebook-square
+                    i.fab.fa-twitter-square
+                    i.fab.fa-instagram
+                    
+                    

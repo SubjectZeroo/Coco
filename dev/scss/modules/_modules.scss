@@ -1,0 +1,21 @@
+.l-container{
+    width: 90%;
+    max-width: $max-width;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.title{
+   text-align: center; 
+   font-weight: $regular;
+}
+
+.subtitle{
+    text-align: center; 
+    font-weight: $regular;
+    color: #9C9C9C;
+}
+
+.logo{
+    width: 20%;
+}

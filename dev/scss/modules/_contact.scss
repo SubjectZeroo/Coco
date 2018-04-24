@@ -1,0 +1,66 @@
+@include desde($large) {
+    .contact {
+        display: flex;
+        justify-content: space-between;
+        padding: 65px 0px 85px 0px;
+        &-inform,
+        &-form__container {
+            width: 50%;
+        }
+    }
+}
+
+.contact-container__form {
+    input {
+        width: 100%;
+        line-height: 1.7;
+        border: 1 px solid rgba (black, .25);
+    }
+    label {
+        font-size: .9em;
+        opacity: .7;
+        line-height: 4;
+    }
+    [type="submit"] {
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 3;
+        cursor: pointer;
+    }
+}
+
+.fas {
+    color: #3F83BF;
+    margin-right: 25px;
+}
+
+.benefit-list {
+    margin-top: 40px;
+    h2 {
+        font-size: 18px;
+        color: #333333;
+    }
+    p {
+        padding-left: 40px;
+        text-align: left;
+        font-size: 15px;
+        color: #666666;
+        line-height: 24px;
+    }
+}
+
+.benefit {
+    width: 100%;
+    h1 {
+        font-size: 22px;
+        color: #333333;
+        font-weight: normal;
+        padding-bottom: 10px;
+    }
+    p {
+        font-size: 13px;
+        color: #333333;
+        line-height: 20px;
+        font-weight: normal;
+    }
+}

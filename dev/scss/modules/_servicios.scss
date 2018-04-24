@@ -1,0 +1,38 @@
+.container-servicio {
+  width: 100%;
+  display: block;
+  margin: auto;
+  &__box {
+    display: inline-block;
+    width: 100%;
+    margin: 2% 0%;
+    text-align: center;
+    padding: 10px;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: $extra-bold;
+    color: #9C9C9C;
+  }
+  p {
+    font-size: 15px;
+    font-weight: $regular;
+    line-height: 25px;
+    color: #666666;
+  }
+  img {
+    border-radius: 50%;
+    border: 1px solid grey;
+  }
+}
+
+@include desde($large) {
+  .container-servicio {
+    display: flex;
+    justify-content: space-between;
+  }
+  .container-servicio__box {
+    width: 45%;
+    margin: 2% 2.5%;
+  }
+}

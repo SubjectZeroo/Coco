@@ -1,0 +1,83 @@
+.container-testimonial {
+    @include desde($small) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    
+}
+.content-area{
+    text-align: center;
+}
+.testimonial {
+    font-size: 13px;
+    padding: 20px;
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid #E0E0E0;
+    font-weight: $regular;
+}
+
+.testimonial-wrap {
+    padding: 1em;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5em;
+
+    @include desde($small) {
+        width: calc(50% - .5em);
+        margin-bottom: 0 0 1em;
+    }
+    @include desde($large) {
+        width: calc(50% - .1em);
+    }
+}
+
+.testimonial-info {
+    color:#E0E0E0;
+    font-weight: bold;
+    margin-top: 25px;
+    float: left;
+}
+
+.testimonial-info h4 {
+    font-size: 10px;
+    margin: 5px auto;
+    color: #333;
+    text-transform: uppercase;
+}
+
+
+
+.testimonial-info p {
+    font-size: 10px;
+    color: #428bca;
+    margin: 0px;
+}
+
+.headshot {
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin-top: 1em; 
+    margin-right: 2em;
+    border: 2px solid #ccc;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.headshot img {
+    width: 100%;
+    height: 100%;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    margin-left: 1.6em;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #E0E0E0;
+}

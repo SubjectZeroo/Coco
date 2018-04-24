@@ -1,0 +1,106 @@
+extends template/template
+block main
+
+    .contact.l-container
+        .contact-inform
+            .benefit
+                img.logo(src="img/transpa.png", alt="")
+                h1 Disfruta de tu dinero hoy:
+                p.prueba Compramos tu saldo de PayPal y te transferimos en Bolívares a cualquier banco de Venezuela.
+
+            .benefit-list
+                h2
+                    i.fas.fa-check-circle
+                    | Instrucciones:
+                p Realiza tu cotización a través del formulario, y al hacer click en "Enviar Solicitud", nos comunicaremos contigo vía correo electrónico con los pasos a seguir para realizar el cambio.
+            .benefit-list
+                h2
+                    i.fas.fa-check-circle
+                    | Transferencia en minutos:
+                p Realiza tu cotización a través del formulario, y al hacer click en "Enviar Solicitud", nos comunicaremos contigo vía correo electrónico con los pasos a seguir para realizar el cambio.
+            .benefit-list
+                h2
+                    i.fas.fa-check-circle
+                    | Sin engaños ni sorpresas
+                p Realiza tu cotización a través del formulario, y al hacer click en "Enviar Solicitud", nos comunicaremos contigo vía correo electrónico con los pasos a seguir para realizar el cambio.
+            .benefit-list
+                h2
+                    i.fas.fa-check-circle
+                    | Importante:
+                p Realiza tu cotización a través del formulario, y al hacer click en "Enviar Solicitud", nos comunicaremos contigo vía correo electrónico con los pasos a seguir para realizar el cambio.
+
+        .container-contact
+            h2.subtitle ¡Realiza tu cotización!
+            form(action="" method="post").contact-container__form
+                label(for="email") Correo electronico:
+                input(type="email" id="email" name="email")
+                label(for="name") Nombre:
+                input(type="text" id="name" name="name")
+                label(for="cantidadC") Cantidad que desea cambiar (USD):
+                input(type="text" id="cantidadC" name="cantidadC")
+                label(for="comisionP") Comisión Paypal (5.4% + 0.3 USD):
+                input(type="text" id="comisionP" name="comisionP")
+                label(for="nuestraC") Nosotros recibimos:
+                input(type="text" id="nuestraC" name="nuestraC")
+                p Tasa: Bs. 680000 por USD
+                label(for="total") Total a recibir en Bs.
+                input(type="text" id="total" name="total")
+                p Se habilitará el formulario y empezarán a atender solicitudes en el 18/04 
+                input(type="submit" value="Enviar").button.primary
+
+    .l-container
+        h1.title PayPal a Bs
+        h2.subtitle Sistema de retiro de saldos PayPal con usuarios en toda Venezuela.
+        .container-servicio
+            .container-servicio__box
+                img(src="img/lider.jpg", alt="")
+                h2.container-services__h4 ¿Qué hacemos?
+                p Somos el sistema líder en retiros de PayPal de Venezuela, con la mejor cotización del mercado y demostrando ampliamente nuestra eficiencia con un 100% de clientes satisfechos.
+            .container-servicio__box
+                img(src="img/handshake.jpg", alt="")
+                h2.container-services__h4 ¿Por qué elegirnos?
+                p Nuestra prioridad es que recibas tu dinero rápidamente y sin perder altas comisiones. Puedes ver nuestras referencias que nos respaldan.
+            .container-servicio__box
+                img(src="img/contact.jpg", alt="")
+                h2.container-services__h4 ¿Cómo contactarnos?          
+                p Puedes enviarnos cualquier inquietud a nuestro correo electrónico consultas@ppabs.com
+    .l-container
+        h1.title ¿Qué opinan nuestros clientes?
+        .container-testimonial.l-container
+            .testimonial-wrap
+                .testimonial
+                    | Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolore perspiciatis quisquam dicta eum 
+                .arrow-down
+                .headshot
+                    img(src='http://www.coe.uh.edu/features/student-success/chaille_thomas/thomas_200x200.jpg')
+                .testimonial-info
+                    h4 Susana Horia
+                    p Review de Facebook
+            .testimonial-wrap
+                .testimonial
+                    | Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aperiam. Odit libero exercitationem alias? 
+                .arrow-down
+                .headshot
+                    img(src='http://www.coe.uh.edu/features/student-success/chaille_thomas/thomas_200x200.jpg')
+                .testimonial-info
+                    h4 Susana Horia
+                    p Review de Facebook
+            .testimonial-wrap
+                .testimonial
+                    | Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aperiam. Odit libero exercitationem alias? 
+                .arrow-down
+                .headshot
+                    img(src='http://www.coe.uh.edu/features/student-success/chaille_thomas/thomas_200x200.jpg')
+                .testimonial-info
+                    h4 Susana Horia
+                    p Review de Facebook
+            .testimonial-wrap
+                .testimonial
+                    | Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aperiam. Odit libero exercitationem alias? 
+                .arrow-down
+                .headshot
+                    img(src='http://www.coe.uh.edu/features/student-success/chaille_thomas/thomas_200x200.jpg')
+                .testimonial-info
+                    h4 Susana Horia
+                    p Review de Facebook
+
