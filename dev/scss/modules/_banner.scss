@@ -1,31 +1,27 @@
 .banner {
-    
-    background: url("../img/banner.jpg") no-repeat center ;
+    background: url("../img/banner-min.jpg") no-repeat center;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     height: 46em;
     width: 100%;
-  }
+}
 
-  .container-banner{
-    
-   &__title{
-      font-size: 2.5em;
-      text-transform: uppercase;
-      font-weight: $extra-bold;
-      letter-spacing: 2px;
-      color: white;
-   }
-
-   &__subtitle{
-    margin-top: 25px;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #fff;
-    font-size: 30px;
-    font-weight: normal;
-   }
-
-  }
+.container-banner {
+    &__title {
+        font-size: 2.5em;
+        text-transform: uppercase;
+        font-weight: $extra-bold;
+        letter-spacing: 2px;
+        color: white;
+    }
+    &__subtitle {
+        margin-top: 25px;
+        margin-bottom: 20px;
+        text-align: center;
+        color: #fff;
+        font-size: 30px;
+        font-weight: normal;
+    }
+}

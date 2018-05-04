@@ -1,0 +1,19 @@
+/**
+ * 
+ * @param {*} el 
+ * @param {*} parent 
+ */
+
+@function em($el, $parent:16px) {
+    @return($el / $parent) * 1em;
+}
+
+
+/**
+ * 
+ * @param {*} color 
+ */
+
+@function getcolor($color) {
+    @return map-get($colors, $color);
+}

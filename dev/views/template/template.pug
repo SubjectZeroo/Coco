@@ -8,22 +8,37 @@ html(lang="es")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         meta(name="description" content=description)
-        title #{pageTitle} | #{siteTitle}
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-        link(rel="stylesheet", href="css/styles.css")
+        link(rel="shortcut icon", href="img/favicon.ico", type="image/x-icon")
+        block title
+            title #{pageTitle} | #{siteTitle}
+
+        block styles
+            link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.10/css/all.css", integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg", crossorigin="anonymous")
+            link(rel="stylesheet", href="css/styles.css")
     body
-        header.main-header
-            .banner
-                .container-banner
-                    img.logo(src="img/CO.png", alt="")
-                    h1.container-banner__title  ya puedes retirar tu dinero de paypal 
-                    h2.container-banner__subtitle ¡Recíbelo en Bolívares Rápido y con la mejor cotización del mercado! 
-        block main
-        footer.main-footer
-                .container-footer
-                    h1.title  Sin efectivo cuenta con tu dinero siempre
-                    i.fab.fa-facebook-square
-                    i.fab.fa-twitter-square
-                    i.fab.fa-instagram
-                    
+        block body
+            header.main-header
+                .banner
+                    .container-button.pos--top-right
+                        button.btn--login#signUp Sign Up
+                        button.btn--login#logIn Log in
+                    .container-banner
+                        img.logo(src="img/CO-min.png", alt="")
+                        h1.container-banner__title  ya puedes retirar tu dinero de paypal 
+                        h2.container-banner__subtitle ¡Recíbelo en Bolívares Rápido y con la mejor cotización del mercado! 
+            block main
+            footer.main-footer
+                    .container-footer
+                        h1.title  Sin efectivo cuenta con tu dinero siempre
+                        i.fab.fa-facebook-square
+                        i.fab.fa-twitter-square
+                        i.fab.fa-instagram
+    block scripts
+        script(src="https://code.jquery.com/jquery-3.3.1.min.js", 
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=",
+            crossorigin="anonymous")
+        script(src="https://www.gstatic.com/firebasejs/4.10.1/firebase-app.js")
+        script(src="https://www.gstatic.com/firebasejs/4.10.1/firebase-auth.js")
+        script(src="https://www.gstatic.com/firebasejs/4.10.1/firebase-database.js")
+        script(src="js/app.js")
                     

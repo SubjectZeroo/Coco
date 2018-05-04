@@ -1,0 +1,100 @@
+extends ../template/template
+
+prepend title
+  title #{BackEndTitle} | #{siteTitle}
+
+prepend styles
+  link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css")
+
+block body
+  block main
+
+    .wrapper-admin
+      section.hero.is-link
+        .hero-body.hero--modify
+          .container
+            // Main container
+            nav.level
+              // Left side
+              .level-left
+                .level-item
+                  p.subtitle.is-5
+                    strong Coco
+                    |  PayPal
+                p.level-item
+                  a.button.is-link.is-active Forms
+                p.level-item
+                  a.button.is-link.is-focused Users
+              // Right side
+              .level-right
+                p.level-item
+                  a.button.is-link.is-focused#signOut Logout
+
+      section.hero.is-white.margin.hero--table__info
+        .hero-body
+          .container
+            // Main container
+            nav.level
+              // Left side
+              .level-left
+                .level-item
+                  span.icon.has-text-link
+                    i.fas.fa-info-circle
+
+                  p.subtitle.is-5
+                    |  Información almacenada
+              // Right side
+              .level-right
+                p.level-item
+                  a.button.is-link.is-active View Form
+
+          .container
+            table.table.table__info
+              thead
+                tr
+                  th Current rate
+                  th fees %
+                  th fees USD
+              tbody
+                tr
+                  td#tableCurrentRate
+                  td#tablePercentageFees
+                  td#tableDolarFees
+
+          .container
+            form(id="formulario")
+              nav.level.mt-5
+                .level-item.has-text-left
+                  div
+                    p.heading Current rate
+                    .field
+                      .control
+                        input.input.is-link(type='number' id='currentRate' min='1' placeholder='720000' required)
+
+                .level-item.has-text-left
+                  div
+                    p.heading fees %
+                    .field
+                      .control
+                        input.input.is-link(type='number' id='percentageFees' min='1' step='0.1' placeholder='5.4' required)
+
+                .level-item.has-text-left
+                  div
+                    p.heading fees USD
+                    .field
+                      .control
+                        input.input.is-link(type='number' id='dolarFees' step='0.1'  placeholder='0.3' required)
+
+                .level-item.has-text-left
+                  div
+                    p.heading 
+                    button.button.is-success.mt-1#saveData(type="submit")
+                      span.icon.is-small
+                        i.fas.fa-check.has-text-white
+                      span Save
+
+append scripts
+  script(src="js/admin.js")
+
+
+              

@@ -1,19 +1,18 @@
-.main-footer{
+.main-footer {
     color: white;
-    background: url("../img/banner.jpg")no-repeat center ;
+    background: url("../img/banner-min.jpg") no-repeat center;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     height: 25em;
     width: 100%;
-
-    &__title{
-      display: inline-block;
+    &__title {
+        display: inline-block;
     }
-  }
+}
 
-  .fab{
+.fab {
     font-size: 4em;
     display: inline-block;
     margin: 0 .3em;
@@ -22,4 +21,4 @@
     &:hover {
         opacity: 1;
     }
-  }
+}

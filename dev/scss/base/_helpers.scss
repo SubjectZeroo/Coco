@@ -1,0 +1,46 @@
+// .container {
+//     max-width: $max-width;
+//     margin-left: auto;
+//     margin-right: auto;
+//     width: 100%;
+// }
+// .container-fluid {
+//     max-width: 100%;
+// }
+.full-height {
+    height: 100vh;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.is-black-ter {
+    background-color: $black-ter;
+}
+
+.margin {
+    margin-left: 0.8em;
+    margin-right: 0.8em;
+    position: relative;
+}
+
+.mt-1 {
+    margin-top: 0.8em;
+}
+
+.mt-2 {
+    margin-top: 2em;
+}
+
+.mt-5 {
+    margin-top: 5em;
+}
+
+.pos--top-right {
+    position: absolute;
+    top: 1.5em;
+    right: 3.2em;
+}
