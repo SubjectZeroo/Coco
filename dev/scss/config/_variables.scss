@@ -1,0 +1,90 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,800');
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,600,900');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,800');
+
+// Colors
+$black: 		hsl(0, 0%, 4%) ;
+$black-bis: 	hsl(0, 0%, 7%) ;
+$black-ter: 	hsl(0, 0%, 14%) ;
+$grey-darker: 	hsl(0, 0%, 21%) ;
+$grey-dark: 	hsl(0, 0%, 29%) ;
+$grey: 			hsl(0, 0%, 48%) ;
+$grey-light:	hsl(0, 0%, 71%) ;
+$grey-lighter: 	hsl(0, 0%, 86%) ;
+$white-ter: 	hsl(0, 0%, 95%) ;
+$white-bis:		hsl(0, 0%, 98%) ;
+$white: 		hsl(0, 0%, 100%) ;
+$orange: 		hsl(14, 100%, 53%) ;
+$yellow: 		hsl(48, 100%, 67%) ;
+$green: 		hsl(141, 71%, 48%) ;
+$turquoise: 	hsl(171, 100%, 41%) ;
+$cyan: 			hsl(204, 86%, 53%) ;
+$blue: 			hsl(217, 71%, 53%) ;
+$purple: 		hsl(271, 100%, 71%) ;
+$red: 			hsl(348, 100%, 61%) ;
+
+$colors:(
+	blanco:#F9FBE7,
+);
+
+// Typography
+$family-sans-serif: BlinkMacSystemFont,
+-apple-system,
+"Segoe UI",
+"Roboto",
+"Oxygen",
+"Ubuntu",
+"Cantarell",
+"Fira Sans",
+"Droid Sans",
+"Helvetica Neue",
+"Helvetica",
+"Arial",
+sans-serif ;
+$font-text:    'Open Sans', sans-serif, Arial;
+$font-raleway: 'Raleway',   sans-serif;
+$font-text:    'Open Sans', sans-serif, Arial;
+$family-monospace: monospace ;
+
+// Font size
+$size-1: 3rem ;
+$size-2: 2.5rem ;
+$size-3: 2rem ;
+$size-4: 1.5rem ;
+$size-5: 1.25rem ;
+$size-6: 1rem ;
+$size-7: 0.75rem ;
+$font-size: em(14px);
+$h3-size: $font-size * 1.15;
+$h2-size: $font-size * 1.35;
+$h1-size: $font-size * 1.7;
+
+// Font weight
+$weight-light: 	  300 ;
+$weight-normal:   400 ;
+$weight-medium:   500 ;
+$weight-semibold: 600 ;
+$weight-bold:     700 ;
+
+$light:300;
+$regular:400;
+$bold:700;
+$extra-bold:800;
+
+// Breakpoints
+$breakpoints: ( 
+	small: 320px, 
+	medium: 767px, 
+	large: 1200px, 
+	xlarge: 1440px
+);
+
+$small: 480px;
+$medium:769px;
+$large:1025px;
+$x-large:1400px;
+
+$max-width: 1200px;

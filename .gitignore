@@ -1,0 +1,11 @@
+### Prepros ###
+# Config Prepros files to ignore
+prepros.cfg
+prepros-6.config
+
+
+## Visual Estudio code
+*.code-workspace
+.vscode
+
+node_modules

@@ -4,7 +4,7 @@ block main
     .contact.l-container
         .contact-inform
             .benefit
-                img.logo(src="img/transpa.png", alt="")
+                img.logo(src="img/transpa-min.png", alt="")
                 h1 Disfruta de tu dinero hoy:
                 p.prueba Compramos tu saldo de PayPal y te transferimos en Bolívares a cualquier banco de Venezuela.
 
@@ -31,22 +31,22 @@ block main
 
         .container-contact
             h2.subtitle ¡Realiza tu cotización!
-            form(action="" method="post").contact-container__form
+            form(method="post" id="quoteForm").contact-container__form
                 label(for="email") Correo electronico:
-                input(type="email" id="email" name="email")
+                input(type="email" id="email" name="email" disabled="")
                 label(for="name") Nombre:
-                input(type="text" id="name" name="name")
+                input(type="text" id="name" name="name" disabled="")
                 label(for="cantidadC") Cantidad que desea cambiar (USD):
-                input(type="text" id="cantidadC" name="cantidadC")
+                input(type="number" min="1" step="0.1" id="cantidadC" name="cantidadC" value="1" placeholder="5.4 USD" required)
                 label(for="comisionP") Comisión Paypal (5.4% + 0.3 USD):
-                input(type="text" id="comisionP" name="comisionP")
+                input(type="number" id="comisionP" name="comisionP" disabled)
                 label(for="nuestraC") Nosotros recibimos:
-                input(type="text" id="nuestraC" name="nuestraC")
-                p Tasa: Bs. 680000 por USD
+                input(type="number" id="nuestraC" name="nuestraC" disabled="")
+                p Tasa: Bs. <span id="currentRate">undefined</span> por USD
                 label(for="total") Total a recibir en Bs.
-                input(type="text" id="total" name="total")
+                input(type="number" id="total" name="total" disabled="")
                 p Se habilitará el formulario y empezarán a atender solicitudes en el 18/04 
-                input(type="submit" value="Enviar").button.primary
+                input(type="submit" value="Enviar").btn--coco.primary
 
     .l-container
         h1.title PayPal a Bs
@@ -103,4 +103,8 @@ block main
                 .testimonial-info
                     h4 Susana Horia
                     p Review de Facebook
+
+                
+append scripts
+  script(src='js/main.js')
 

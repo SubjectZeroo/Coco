@@ -1,16 +1,26 @@
 
-//Config
-@import 'config';
+// 1. Configuration and helpers
+@import 'config/functions.scss';
+@import 'config/mixins.scss';
+@import 'config/variables.scss';
 
-//Estilos Base
-@import 'base/_normalize';
-@import 'base/_base';
+// 2. Vendor
+@import 'vendor/normalize';
 
+// 3. Base stuff
+@import 'base/base';
+@import 'base/helpers';
 
-@import 'modules/_banner';
-@import 'modules/_contact';
+// 4. Layout-related sections
+
+// 5. Components
+@import 'modules/banner';
+@import 'modules/contact';
 @import 'modules/modules';
 @import 'modules/servicios';
 @import 'modules/testimonial';
 @import 'modules/footer';
 @import 'modules/buttons';
+@import 'components/navbar';
+@import 'components/hero';
+@import 'components/admin';
